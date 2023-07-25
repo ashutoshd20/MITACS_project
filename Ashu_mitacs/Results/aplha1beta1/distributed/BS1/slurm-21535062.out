@@ -1,0 +1,17 @@
+2023-07-22 20:13:59.060640: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-22 20:14:00.320972: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-07-22 20:14:03.961048: I tensorflow/core/common_runtime/gpu/gpu_process_state.cc:226] Using CUDA malloc Async allocator for GPU: 0
+2023-07-22 20:14:03.961800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1635] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14587 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:d8:00.0, compute capability: 7.0
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+Traceback (most recent call last):
+  File "/home/ashutosh.dwivedi/distributed_unlearn/main_distributed_Ashu.py", line 51, in <module>
+    classifier_PD = tf.keras.models.load_model(args.pd)
+  File "/home/ashutosh.dwivedi/miniconda3/envs/ashu/lib/python3.9/site-packages/keras/saving/saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "/home/ashutosh.dwivedi/miniconda3/envs/ashu/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/ashutosh.dwivedi/miniconda3/envs/ashu/lib/python3.9/site-packages/keras/saving/legacy/save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at PD_classifier_BS3.h5
